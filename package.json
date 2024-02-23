@@ -1,0 +1,19 @@
+{
+    "name": "primato-game-library",
+    "license": "CC0-1.0",
+    "version": "0.0.1",
+    "main": "dist/index.js",
+    "module": "dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "type": "module",
+    "scripts": {
+        "build": "tsup index.ts --format cjs,esm --dts --clean",
+        "lint": "tsc",
+        "release": "tsup index.ts --format cjs,esm --dts && changeset publish"
+    },
+    "devDependencies": {
+        "@changesets/cli": "^2.27.1",
+        "tsup": "^8.0.2",
+        "typescript": "^5.3.3"
+    }
+}
