@@ -2,4 +2,4 @@
 "primato-game-library": patch
 ---
 
-initial commit
+revised npm package access
